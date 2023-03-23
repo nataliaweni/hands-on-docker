@@ -1,0 +1,10 @@
+version: '3.8'
+services:
+  app-prod:
+      container_name: loja-virtual
+      build:
+        context: .
+        dockerfile: Dockerfile
+      ports:
+        - '8080:80'
+        
